@@ -19,10 +19,23 @@ input[type=text] {
     cursor: pointer;
     font-size: 20px;
   }
+  .container {
+    display: flex;
+    justify-content: center; /* توسيط أفقي */
+    align-items: center; /* توسيط عمودي */
+    height: 100vh; /* جعل الحاوية تأخذ ارتفاع الشاشة بالكامل */
+}
+
   @media (max-width: 500px) {
     #sign{
         display: block;
-        
+
+    }
+    .container {
+        display: flex;
+        justify-content: center; /* توسيط أفقي */
+        align-items: center; /* توسيط عمودي */
+        height: 100vh; /* جعل الحاوية تأخذ ارتفاع الشاشة بالكامل */
     }
 }
 
