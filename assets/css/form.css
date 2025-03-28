@@ -17,9 +17,15 @@ input[type=text] {
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 20px;
   }
-  
+  @media (max-width: 500px) {
+    #sign{
+        display: block;
+        
+    }
+}
+
   input[type=submit]:hover {
     background-color: #45a049;
   }
