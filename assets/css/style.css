@@ -621,12 +621,18 @@ nav.navbar.bootsnav .navbar-toggle i {
         7. Explore
 --------------------------------------*/
 .explore {
-    padding: 117px 0 95px;
-    background: #f8fafb;
+    padding: 60px 0 95px;
+    background: #e8eced;
 }
 
 .explore-content {
-    margin-top: 78px;
+    margin-top: 30px;
+}
+.explore h2 {
+    font-size: 40px;
+}
+.explore p {
+    font-size: 25px;
 }
 
 .single-explore-item {
