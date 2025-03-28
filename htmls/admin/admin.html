@@ -103,6 +103,8 @@
                 <form action="">
                     <input type="password" id="password" placeholder="أدخل كلمة المرور" class="password"><br><br>
                     <button onclick="checkPassword()" id="sign">تسجيل</button>
+                    <button onclick="checkPassword2()" id="sign">رفع صور</button>
+
 
                 </form>
 
@@ -188,6 +190,19 @@
 
             if (userPassword === correctPassword) {
                 window.open("https://drive.google.com/drive/folders/1McH9Vk5auhIb8KfmbG24gTWaheKtzw7wKD_E1Eo7aUNdDk4tfk0EvPOkIgDk_NgnJwwH434f?usp=drive_link");
+            } else {
+                alert("كلمة المرور خاطئة!");
+                passwordInput.value = ""; // مسح الإدخال للسماح بالمحاولة مجدداً
+                passwordInput.focus(); // إعادة التركيز على حقل الإدخال
+                // location.reload();
+            }
+        }
+        function checkPassword2() {
+            var correctPassword = "#1212admin@1212#"; // كلمة المرور الصحيحة
+            var userPassword = document.getElementById("password").value;
+
+            if (userPassword === correctPassword) {
+                window.open("https://drive.google.com/drive/folders/1On4JmmO2jUhqs7abh7uxr15C3jZumap0");
             } else {
                 alert("كلمة المرور خاطئة!");
                 passwordInput.value = ""; // مسح الإدخال للسماح بالمحاولة مجدداً
