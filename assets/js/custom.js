@@ -4,7 +4,7 @@ $(document).ready(function(){
     
     // 1. Scroll To Top 
 		$(window).on('scroll',function () {
-			if ($(this).scrollTop() > 600) {
+			if ($(this).scrollTop() > 100) {
 				$('.return-to-top').fadeIn();
 			} else {
 				$('.return-to-top').fadeOut();

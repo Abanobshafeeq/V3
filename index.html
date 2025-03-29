@@ -102,7 +102,8 @@
 					<!-- <svg width="300px" height="150px">
 						
 					</svg> -->
-					<h2>مهرجان التسبحة ٢٢ صيف ٢٠٢٥ م </h2>
+					<h2 id="typingText"></h2>
+					<!-- <h2>مهرجان التسبحة ٢٢ صيف ٢٠٢٥ م </h2> -->
 					<img src="assets/images/3.png" alt="" width="250px">
 					<h3>
 						تحت رعاية نيافة الحبر الجليل الأنبا يوحنا أسقف شمال الجيزة
@@ -113,24 +114,7 @@
 
 		</section><!--/.welcome-hero-->
 		
-		<!-- <section id="blog" class="blog" >
-			<div class="row" style="text-align: center;">
-				<div class="col-md-4 col-sm-6">
-					<div class="single-blog-item">
-						<div class="single-blog-item-img">
-							<img src="assets/images/blog/b1.jpg" alt="blog image" >
-						</div>
-						<div class="single-blog-item-txt">
-							<h2><a href="#">How to find your Desired Place more quickly</a></h2>
-							<h4>posted <span>by</span> <a href="#">admin</a> march 2018</h4>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempore incididunt ut labore et dolore magna.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
+	
 		<section id="works" class="works">
 			<div class="container">
 			
@@ -350,6 +334,19 @@
 		     
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
+		
+		<script>
+			  let text = "مهرجان التسبحة ٢٢ صيف ٢٠٢٥ م";
+        let i = 0;
+        function typeEffect() {
+            if (i < text.length) {
+                document.getElementById("typingText").textContent += text.charAt(i);
+                i++;
+                setTimeout(typeEffect, 50);
+            }
+        }
+        typeEffect();
+		</script>
         
     </body>
 	
