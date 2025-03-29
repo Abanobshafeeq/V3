@@ -46,7 +46,7 @@
 }/*max-width:768px*/
 
 @media screen and (max-width:767px){
-	.welcome-hero-txt h2 {font-size: 23px;}
+	.welcome-hero-txt h2 {font-size: 22px;}
 	.welcome-hero-txt h3 {font-size: 19px;}
 	.single-welcome-hero {height:auto;background: transparent;padding: 100px 0;display: block;}
 	.welcome-hero-txt {padding-top: 80px;}
