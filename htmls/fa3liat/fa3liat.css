@@ -7,9 +7,12 @@
 }
 
 img {
-    width: 200px;
+    width: 300px;
     height: auto;
     border-radius: 10px;
+}
+#imagesoon{
+    width: 450 !important;
 }
 
 .dropdown-container {
@@ -67,6 +70,9 @@ img {
 
     img {
         width: 120px;
+    }
+    #imagesoon{
+        width: 100% !important;
     }
     .explore h2 {
         font-size: 20px;
