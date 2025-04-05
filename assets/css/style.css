@@ -621,7 +621,8 @@ nav.navbar.bootsnav .navbar-toggle i {
         7. Explore
 --------------------------------------*/
 .explore {
-    padding: 30px 0 30px;
+    padding: 20px 0 20px;
+    margin-top: 10px;
     background: #dde0e0;
     border-radius: 50px;
     margin-left: 20px;
