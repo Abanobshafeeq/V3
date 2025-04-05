@@ -48,39 +48,12 @@
 
     <!--responsive.css-->
     <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="fa3liat.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
-    <style>
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        img {
-            width: 200px;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        @media (max-width: 500px) {
-            .section-header h2 {
-                font-size: 20px;
-
-            }
-
-            .section-header p {
-                font-size: 15px;
-            }
-            img {
-                width: 140px;
-            }
-        }
-    </style>
-
+   
 </head>
 
 <body>
@@ -119,99 +92,28 @@
         </div><!--/.header-area-->
         <div class="clearfix"></div>
         <!--explore start -->
+    <!-- //////////////////////////////////////////////////////////////// -->
         <section id="explore" class="explore">
-            <div class="container">
-                <div class="section-header">
-                    <h2> 📸 فعاليات 📸</h2>
-                    <p>حفل ختام مهرجان التسبحة ٢٢ صيف ٢٠٢٥ م</p>
-                </div><!--/.section-header-->
-                <div class="explore-content">
-                    <div class="row">
-                        <div class="gallery" id="imageGallery"></div>
-                        <!-- <div class=" col-md-4 col-sm-6">
-                    <div class="single-explore-item">
-                        <div class="single-explore-img">
-                            <img src="../../assets/images/explore/e2.jpg" alt="explore image">
+            <h2> 📸 فعاليات 📸</h2>
+            <!-- ....................................... -->
+            <div class="dropdown-container">
+                <div class="dropdown-header" onclick="toggleDropdown()">
+                    <span class="textspan">مهرجان التسبحة ٢٢ صيف ٢٠٢٥ م</span>
+                    <span class="arrow" id="arrow">&#9660;</span> <!-- Down arrow -->
+                </div>
+                <div class="dropdown-content" id="dropdownContent">
+                    <div class="explore-content">
+                        <div class="row">
+                            <div class="gallery" id="imageGallery"></div>
                         </div>
                     </div>
                 </div>
-                <div class=" col-md-4 col-sm-6">
-                    <div class="single-explore-item">
-                        <div class="single-explore-img">
-                            <img src="../../assets/images/explore/e3.jpg" alt="explore image">
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-md-4 col-sm-6">
-                    <div class="single-explore-item">
-                        <div class="single-explore-img">
-                            <img src="../../assets/images/explore/e4.jpg" alt="explore image">
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-md-4 col-sm-6">
-                    <div class="single-explore-item">
-                        <div class="single-explore-img">
-                            <img src="../../assets/images/explore/e5.jpg" alt="explore image">
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-md-4 col-sm-6">
-                    <div class="single-explore-item">
-                        <div class="single-explore-img">
-                            <img src="../../assets/images/explore/e6.jpg" alt="explore image">
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-md-4 col-sm-6">
-                    <div class="single-explore-item">
-                        <div class="single-explore-img">
-                            <img src="../../assets/images/explore/e1.jpg" alt="explore image">
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-md-4 col-sm-6">
-                    <div class="single-explore-item">
-                        <div class="single-explore-img">
-                            <img src="../../assets/images/explore/e2.jpg" alt="explore image">
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-md-4 col-sm-6">
-                    <div class="single-explore-item">
-                        <div class="single-explore-img">
-                            <img src="../../assets/images/explore/e3.jpg" alt="explore image">
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-md-4 col-sm-6">
-                    <div class="single-explore-item">
-                        <div class="single-explore-img">
-                            <img src="../../assets/images/explore/e4.jpg" alt="explore image">
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-md-4 col-sm-6">
-                    <div class="single-explore-item">
-                        <div class="single-explore-img">
-                            <img src="../../assets/images/explore/e5.jpg" alt="explore image">
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-md-4 col-sm-6">
-                    <div class="single-explore-item">
-                        <div class="single-explore-img">
-                            <img src="../../assets/images/explore/e6.jpg" alt="explore image">
-                        </div>
-                    </div>
-                </div> -->
+            <!-- ....................................... -->
 
-
-                    </div>
-                </div>
-            </div><!--/.container-->
-
-        </section><!--/.explore-->
+            </div>
+        </section>
+    <!-- //////////////////////////////////////////////////////////////// -->
+       
         <!--explore end -->
         <footer id="footer" class="footer">
             <div class="container">
@@ -277,26 +179,7 @@
 
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
-        <script>
-            async function fetchImages() {
-                const scriptUrl = "https://script.google.com/macros/s/AKfycbyNIbDpPZn5DIyIvM45Q_OU4hst_GNoGevzqE4Q6ZBzNiBt0o2vLBYr7wEdxudj9hlFzA/exec"; // ضع رابط Web App هنا
-                try {
-                    const response = await fetch(scriptUrl);
-                    const imageLinks = await response.json();
-
-                    const gallery = document.getElementById("imageGallery");
-                    imageLinks.forEach(link => {
-                        const img = document.createElement("img");
-                        img.src = link;
-                        gallery.appendChild(img);
-                    });
-                } catch (error) {
-                    console.error("حدث خطأ أثناء تحميل الصور:", error);
-                }
-            }
-
-            fetchImages();
-        </script>
+        <script src="fa3liat.js"></script>
 
 </body>
 
