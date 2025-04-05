@@ -22,6 +22,7 @@ async function fetchImages() {
 }
 
 fetchImages();
+//////////////////////////////////////////////////////////////////////////////
 function toggleDropdown2015() {
     const content = document.getElementById("dropdownContent2015");
     const arrow = document.getElementById("arrow");
@@ -72,3 +73,54 @@ async function fetchImagesw2015() {
 }
 
 fetchImagesw2015();
+//////////////////////////////////////////////////////////////////////////////
+function toggleDropdown2016() {
+    const content = document.getElementById("dropdownContent2016");
+    const arrow = document.getElementById("arrow");
+    content.classList.toggle("show");
+    arrow.classList.toggle("rotate");
+}
+async function fetchImages2016() {
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbylu4FhV-xoQt6y5AqRDKIDv-a0GXy8eCxzq24Dp6nNxytOpVFNdW_sibHamdZbLohGfg/exec"; // ضع رابط Web App هنا
+    try {
+        const response = await fetch(scriptUrl);
+        const imageLinks = await response.json();
+
+        const gallery = document.getElementById("imageGallery2016");
+        imageLinks.forEach(link => {
+            const img = document.createElement("img");
+            img.src = link;
+            gallery.appendChild(img);
+        });
+    } catch (error) {
+        console.error("حدث خطأ أثناء تحميل الصور:", error);
+    }
+}
+
+fetchImages2016();
+//////////////////////////////////////////////////////////////////////////
+
+function toggleDropdownw2016() {
+    const content = document.getElementById("dropdownContentw2016");
+    const arrow = document.getElementById("arrow");
+    content.classList.toggle("show");
+    arrow.classList.toggle("rotate");
+}
+async function fetchImagesw2016() {
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbxVu9Y486srn7KpvlIEBXnif2fwS52eEsa7b8-0RjoteIFN1tP-oQvNE0QqLuuKXzq1/exec"; // ضع رابط Web App هنا
+    try {
+        const response = await fetch(scriptUrl);
+        const imageLinks = await response.json();
+
+        const gallery = document.getElementById("imageGalleryw2016");
+        imageLinks.forEach(link => {
+            const img = document.createElement("img");
+            img.src = link;
+            gallery.appendChild(img);
+        });
+    } catch (error) {
+        console.error("حدث خطأ أثناء تحميل الصور:", error);
+    }
+}
+
+fetchImagesw2016();
