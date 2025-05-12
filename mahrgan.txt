@@ -1,16 +1,1 @@
-1c8DdcspMoUoACjW1Dljvx_QTn0NC9ste9NBUBnAKvx7N1oRylna77nHrVAZeUI1ifbIUJPPE
-//folder id
 
-https://docs.google.com/spreadsheets/d/1Cku4RFCv928vZlTieGSCjqYxXikO9TFnxH7HRXXGjKE/edit?usp=sharing
-//google sheet
-
-
-https://docs.google.com/spreadsheets/d/e/2PACX-1vTHlQiMO5n2ysxx23xNDdBPWVVR7kq8-HWNjCkxCUA7bmJztk3FoT2iDQ_aQs4qfBfxkIhfm_YIt4e4/pub?gid=0&single=true&output=csv
-
-//csv
-
-
-
-https://script.google.com/macros/s/AKfycbwEi0o6igC7If43g58IwYcae42gkwq0IuCb2gAV_ZaydTCqA-dRVtNtfc9fcf8Q4YO4Cg/exec
-
-Web app sheet ?
