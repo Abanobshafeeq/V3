@@ -3,6 +3,8 @@
 }/*max-width:1680px*/
 @media screen and (max-width:1440px){
 	.single-welcome-hero {height: 807px;}
+		.footer {font-size: 13px;}
+
 }/*max-width:1440px*/
 
 @media screen and (max-width:1199px){
@@ -15,11 +17,14 @@
 
 	.single-ststistics-box h3 {font-size: 18px;}
 	.statistics-content {font-size: 40px;}
+	.footer {font-size: 13px;}
 
 }/*max-width:1199px*/
 
 @media screen and (max-width:1024px){
 	.single-welcome-hero {height:768px;}
+		.footer {font-size: 13px;}
+
 }/*max-width:1024px*/
 
 @media screen and (max-width:1008px){
@@ -30,6 +35,8 @@
 	nav.navbar.bootsnav .navbar-collapse.collapse.in {padding-bottom: 30px;}
 	nav.navbar.bootsnav .navbar-brand {padding: 25px;}
 	nav.navbar.bootsnav ul.nav > li > a {padding: 15px 0px;border: transparent;}
+		.footer {font-size: 13px;}
+
 	.wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a {padding: 15px 0px;}
 }/*max-width:992px*/
 
@@ -39,6 +46,8 @@
 	.welcome-hero-form {width: 100%;}
 	.explore-price-box {padding: 0 5px;margin: 0 5px;}
 	.footer-menu ul.footer-menu-item li a {padding-left: 15px;}
+		.footer {font-size: 13px;}
+
 }/*max-width:991px*/
 
 @media screen and (max-width:768px){
@@ -71,7 +80,8 @@
 	.footer-social {text-align:left;margin-top: 20px;}
 	.footer-menu ul.footer-menu-item {text-align: left;margin-top: 20px;}
 	.footer-menu ul.footer-menu-item li a {padding-right: 15px;padding-left: 0;margin-bottom: 15px;}
-	
+		.footer {font-size: 13px;}
+
 }/*max-width:767px*/
 
 @media screen and (max-width: 660px){
@@ -90,10 +100,14 @@
 	.header-top ul li.head-responsive-right {float: none!important;display: block;}
 	.select-opt,.header-top-contact{border:0;}
 	.subscribe-title h2 {font-size: 18px;}
+		.footer {font-size: 13px;}
+
 }/*max-width:540px*/
 
 @media screen and (max-width: 480px){
 	.subscription-input-group .subscription-input-form {width: 300px;}
+		.footer {font-size: 13px;}
+
 }/*max-width:480px*/
 
 @media screen and (max-width: 440px){
@@ -110,6 +124,8 @@
 	nav.navbar.bootsnav .navbar-brand {padding:25px 0;font-size: 20px;}
 	.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand, .wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:hover,.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:focus {padding: 25px 0px;}
 	.subscription-input-group .subscription-input-form {width: 220px;}
+		.footer {font-size: 13px;}
+
 }/*max-width:350px*/
 
 @media screen and  (max-width: 320px){
